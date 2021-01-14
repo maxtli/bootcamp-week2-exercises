@@ -23,8 +23,8 @@ module.exports = {
   },
   useNullAsDefault: true,
   pool: {
-    min: 2,
-    max: 5,
+    min: 0,
+    max: 20,
     afterCreate(conn, done) {
       conn.on('error', error => {
         console.log('Database connection error!')
